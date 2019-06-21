@@ -1,4 +1,4 @@
-### SYSADMINUNIT
+### SysAdminUnit
 Хранятся и пользователи, и роли всех видов.
 Тип записи задаётся числом в поле **SysAdminUnitTypeValue**.
 Расшифровку чисел можно посмотреть в таблице SysAdminUnitType.
