@@ -1,15 +1,17 @@
 ### Add:
 
-- getRightsOnRoleAdmins
-	1. 	idCurrentUser - текущий пользователь
-	2. 	idContactLaywer - поле 'Ответственный юрист КМИ'
-	3. 	idCurrentOwner - поле 'Ответственный за договор'
-	4. 	stageContract - стадия договора
+- **getRightsOnRoleAdmins**
+
+	1. idCurrentUser - текущий пользователь
+	2. idContactLaywer - поле 'Ответственный юрист КМИ'
+	3. idCurrentOwner - поле 'Ответственный за договор'
+	4. stageContract - стадия договора
 
 ### Fix:
 
-onEntityInitialized
+**onEntityInitialized**
 
+```javascript
 	// | Ответственный за договор
 	var currentOwner = this.get("Owner");
 	var idCurrentOwner = currentOwner.value;
@@ -40,3 +42,4 @@ onEntityInitialized
 	var stagetEnclosed = "EEE28F06-1872-4EC5-BDB4-95C3F849F226".toLowerCase();
 
 	this.getRightsOnRoleAdmins(idCurrentUser, idCurrentLayer, idCurrentOwner, stageContract);
+```
