@@ -9,7 +9,7 @@
 
 ### Fix:
 
-**onEntityInitialized**
+- **onEntityInitialized**
 
 ```javascript
 	// | Ответственный за договор
