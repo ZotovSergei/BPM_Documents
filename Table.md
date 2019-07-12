@@ -69,3 +69,23 @@ SELECT * FROM SysSchema WHERE Name = 'Activity' AND ExtendParent = 0
  Только для создания мини-карточек,
 
 ------------
+
+
+### SysProfileData
+Таблица профилей пользователей. 
+Пустой контакт означает "профиль по умолчанию".
+- *id* - Уникальный id записи
+- *CreatedOn* - Время создания записи
+- *CreatedId* - Id сотрудника, который создал запись из таблицы **Contact**
+- *ModifiedOn* - Дата изменения записи
+- *ModifiedById* - Id сотрудника, который изменил запись из таблицы **Contact**
+- *SysUserId* - 
+- *ObjectId* - 
+- *Key* - Ключ страницы для которой создан профиль
+- *ObjectData*-
+- *ObjectDiffrence*-
+- *ContactId* - Id Контакта для которого создан данный профиль
+- *ProccesListeners*
+- *SysCultureID*-
+
+------------
