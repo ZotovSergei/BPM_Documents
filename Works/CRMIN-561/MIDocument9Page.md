@@ -32,14 +32,14 @@
 	{
 		"operation": "insert",
 		"name": "MICotractConditions1ec42647-acd8-43db-b1bf-e572d82d463e",
-		....
+		...
 			"click": {
 				"bindTo": "actionWithContract"
 			},
 			"enabled": {
 				"bindTo": "MITermsOfContractEnabled"
 			}
-		....
+		...
 	},
 ```
 ```json
@@ -81,3 +81,36 @@
 		...
 	},
 ```
+##### **methods**:
+onEntityInitialized() {
+		...
+```javascript
+var miStageLK = this.get("MIStageLK");
+if (miStageLK.value == "acdd2ec8-574f-4c19-afa3-6a9b826043c4") this.set("MITermsOfContractEnabled", true);
+if (this.get("MICotractConditions") == false) this.set("MIClientSpecificationFormTypicalChangedEnabled", true);
+```
+}
+
+
+
+### Add: 
+##### methods:
+
+*specificationFilling*()
+
+###### parameters: 
+- contract - объект договор с выборочными полями.
+
+------------
+
+*showErrorMessage()*
+
+###### parameters: 
+- message - текст , который будет выводиться
+
+------------
+
+*actionWithContract()*
+
+------------
+
