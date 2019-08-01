@@ -83,14 +83,13 @@
 ```
 ##### **methods**:
 ```javascript
-*onEntityInitialized()* {
-		...
-
+onEntityInitialized() {
+...
 var miStageLK = this.get("MIStageLK");
 if (miStageLK.value == "acdd2ec8-574f-4c19-afa3-6a9b826043c4") this.set("MITermsOfContractEnabled", true);
 if (this.get("MICotractConditions") == false) this.set("MIClientSpecificationFormTypicalChangedEnabled", true);
-```
 }
+```
 
 
 
